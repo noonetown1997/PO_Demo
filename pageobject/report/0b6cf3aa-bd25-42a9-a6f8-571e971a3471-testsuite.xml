@@ -1,0 +1,33 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1567826199263" stop="1567826218442">
+  <name>test_screenshot</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1567826199263" status="failed" stop="1567826218442">
+      <name>Test_001.test_001</name>
+      <failure>
+        <message>FileNotFoundError: [Errno 2] No such file or directory: './image/截图.png'</message>
+        <stack-trace>self = &lt;test_screenshot.Test_001 object at 0x0000013AD0856278&gt;
+
+    def test_001(self):
+        # 截图
+        driver = get_android_driver("com.yunmall.lc", "com.yunmall.ymctoc.ui.activity.MainActivity")
+        driver.get_screenshot_as_file("./image/截图.png")
+    
+        # 添加图片
+&gt;       with open("./image/截图.png", "rb") as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: './image/截图.png'
+
+scripts\test_screenshot.py:17: FileNotFoundError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9264-MainThread"/>
+        <label name="host" value="DESKTOP-JE9TN8F"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

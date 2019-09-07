@@ -1,0 +1,27 @@
+test_login_01:
+  user: "13205698627"
+  passwd: "wyz19970912"
+  exp_data: "我的收藏"
+test_login_02:
+  user: " 13205698627"
+  passwd: "wyz19970912"
+  exp_data: "我的收藏"
+test_login_03:
+  user: "13205698627 "
+  passwd: "wyz19970912"
+  exp_data: "我的收藏"
+test_login_05:
+  user: "noonetown"
+  passwd: "wyz19970912"
+  exp_data: "我的收藏"
+
+test_login_09:
+  user: "13700001111"
+  passwd: "159357li"
+  toast: "不存在"
+  exp_data: "此用户不存在"
+test_login_13:
+  user: "13205698627"
+  passwd: "159357"
+  toast: "错误"
+  exp_data: "登录密码错误"
